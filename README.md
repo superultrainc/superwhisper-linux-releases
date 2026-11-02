@@ -17,9 +17,6 @@ One archive per CPU type runs on every supported desktop. It is named
 | Arch, CachyOS, EndeavourOS | KDE Plasma 6 (Wayland) | Tested on CachyOS. |
 | Arch, CachyOS, EndeavourOS | GNOME (Wayland) | Tested on CachyOS with GNOME 51. Log out and back in once after installing, so the recording pill and top-bar menu load. |
 
-Not supported yet: Ubuntu, Fedora and Debian (testing is under way), Sway, niri and
-other desktops, X11 sessions, and distributions without systemd.
-
 ## Install
 
 Download the `.tar.zst` and `.sha256` for your CPU from the latest release, then:
