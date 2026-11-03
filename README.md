@@ -1,15 +1,30 @@
 # Superwhisper for Linux
 
 Superwhisper is built for 64-bit Intel/AMD (`x86_64`) and ARM (`aarch64`) PCs;
-each archive's file name says which. It is made for Omarchy (Hyprland)
-and also runs on KDE Plasma and GNOME on Wayland; see "Other desktops" below.
+each archive's file name says which. It runs on Hyprland (including Omarchy),
+KDE Plasma and GNOME on Wayland; see "Other desktops" below.
 The ARM build needs an ARMv8.2 CPU with dot product for Offline (Apple M1 and
 later under Asahi Linux, Snapdragon X, Raspberry Pi 5); Cloud works on any.
-The file is named `superwhisper-omarchy-…` for update compatibility. It uses Vulkan for local
-transcription and optional CPU inference for S1 Mini cleanup. Cloud processing is included.
+It uses Vulkan for local transcription and optional CPU inference for S1 Mini cleanup. Cloud processing is included.
 The portable archive downloads checksum-verified models after installation. Offline uses Cohere Transcribe, S1 Mini cleanup, Silero VAD, and acoustic vocabulary.
 
-Install from a terminal:
+## Supported distros
+
+- Omarchy, Arch and CachyOS
+- Ubuntu 24.04 or newer
+- Linux Mint 22 or newer
+- Debian 13 (trixie) or newer
+- Fedora 40 or newer
+- openSUSE Tumbleweed
+
+You need Wayland (Hyprland, KDE Plasma or GNOME), systemd, and a 64-bit
+Intel/AMD or ARM CPU. The installer adds the packages Superwhisper needs on
+these distros. Others are not supported yet; if yours is missing, email
+support@superwhisper.com.
+
+## Install
+
+From a terminal:
 
 ```sh
 curl -fsSL https://tux.superwhisper.com/install.sh | sh
@@ -24,9 +39,9 @@ see what it would do first, add `--dry-run`. You can
 To install from a downloaded archive by hand:
 
 ```sh
-sha256sum -c superwhisper-omarchy-*.tar.zst.sha256
-tar --zstd -xf superwhisper-omarchy-*.tar.zst
-cd superwhisper-omarchy-*/
+sha256sum -c superwhisper-*.tar.zst.sha256
+tar --zstd -xf superwhisper-*.tar.zst
+cd superwhisper-*/
 ./install.sh
 ```
 
