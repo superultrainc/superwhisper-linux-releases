@@ -18,13 +18,8 @@ curl -fsSL https://tux.superwhisper.com/install.sh | sh
 It downloads the latest release for your CPU, checks its SHA-256 (and its
 minisign signature when `minisign` is installed), then runs the archive's
 `install.sh`. For the beta channel, add `-s -- --channel beta` after `sh`; to
-see what it would do first, add `--dry-run`. To read the script before running it:
-
-```sh
-curl -fsSLO https://tux.superwhisper.com/install.sh
-less install.sh
-sh install.sh
-```
+see what it would do first, add `--dry-run`. You can
+[read the script](https://tux.superwhisper.com/install.sh) before running it.
 
 To install from a downloaded archive by hand:
 
