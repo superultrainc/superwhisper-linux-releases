@@ -1,4 +1,4 @@
-# Superwhisper for Linux — early access
+# Superwhisper for Linux
 
 Superwhisper is built for 64-bit Intel/AMD (`x86_64`) and ARM (`aarch64`) PCs;
 each archive's file name says which. It is made for Omarchy (Hyprland)
